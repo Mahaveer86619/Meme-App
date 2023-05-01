@@ -23,19 +23,20 @@
             <ImageView
                 android:id="@+id/meme_image"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
+                android:layout_margin="25dp"
                 android:contentDescription="@string/meme"
                 tools:ignore="MissingConstraints">
             </ImageView>
 
-            <ProgressBar
-                android:id="@+id/progress_bar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@id/meme_image"
-                app:layout_constraintEnd_toEndOf="@id/meme_image"
-                app:layout_constraintStart_toStartOf="@id/meme_image"
-                app:layout_constraintTop_toTopOf="@id/meme_image"/>
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress_bar"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/meme_image"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/meme_image"-->
+<!--                app:layout_constraintStart_toStartOf="@id/meme_image"-->
+<!--                app:layout_constraintTop_toTopOf="@id/meme_image"/>-->
 
         </LinearLayout>
 
@@ -58,7 +59,7 @@
                 android:background="@drawable/share_next_shape"
                 app:backgroundTint="@color/green"
                 android:text="@string/share"
-                android:onClick="sharememe">
+                android:onClick="share_meme">
 
             </Button>
             <View
@@ -79,7 +80,7 @@
                 android:background="@drawable/share_next_shape"
                 app:backgroundTint="@color/sky_blue"
                 android:text="@string/next"
-                android:onClick="nextmeme">
+                android:onClick="next_meme">
 
             </Button>
 
